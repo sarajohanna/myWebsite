@@ -5,15 +5,34 @@
 <meta charset="utf-8">
 <style>
 	body {
-	background-color: #DCF3F3;
-	color: #7A9999;
-	margin-top: 50px;
-	margin-left: 100px;
-	margin-right: 100px;
+		background-color: #DCF3F3;
+		color: #7A9999;
+		margin-top: 50px;
+		margin-left: 100px;
+		margin-right: 100px;
 	}
 
 	div {
-	color: #993300;
+		color: #993300;
+		height: 250px;
+		width: 400px;
+		border-style: solid;
+		border-color: #000000;
+	}
+
+	.hej {
+		background-color: pink;
+		border-style: dotted;
+		color: black;
+		height: 50px;
+
+	}
+	textarea {
+		width: 300px;
+		height: 100px;
+	}
+	table {
+		 text-align: left;
 	}
 
 </style>
@@ -21,6 +40,8 @@
 <body>
 
 	<img src="http://vignette2.wikia.nocookie.net/dreamworks/images/5/5f/King_Julien.png/revision/latest?cb=20141216141400">
+	
+	
 	<h1>Madagaskar 2</h1>
 	
 	<p> New York-djuren <em>Alex</em>, <em>Melman</em>, <em>Marty</em> och <em>Gloria</em> har tröttnat på att stanna kvar på Madagaskar och bygger ett flygplan för att kunna ta sig tillbaka till Central Parks djurpark. <br> Madagaskar kan vara ett trevligt ställe att besöka, men för ett gäng djur som tillbringade större delen av sina liv i New York finns det ingen annan plats än hemma. Efter att ha <br> 
@@ -41,16 +62,67 @@
 	<li>Cedric the Entertainer - Maurice</li>
 	</ul>
 
-	<div> Filmen utspelar sig alltså på Afrikas otämjda slätter och nu när djuren som fötts upp i den säkra djurparken tar kontakt med sina vilda motsvarigheter för första gången får de en <br>bättre känsla för sina rötter, men de blir också förundrade över de stora skillnaderna mellan livet i betongdjungeln och livet på världens näst största kontinent. Men medan det <br> finns mycket att älska om de öppna afrikanska slätterna börjar romantisk rivalitet, krångliga släktträffar och risken att stöta på farliga tjuvskyttar att försvåra vistelsen i Afrika. <br> När gruppen får en stor hemlängtan som tynger deras hjärtan	börjar de undra om de någonsin kommer att finna vägen hem igen.</div>
-
+	<div> Filmen utspelar sig alltså på Afrikas otämjda slätter och nu när djuren som fötts upp i den säkra djurparken tar kontakt med sina vilda motsvarigheter för första gången får de en bättre känsla för sina rötter, men de blir också förundrade över de stora skillnaderna mellan livet i betongdjungeln och livet på världens näst största kontinent. Men medan det finns mycket att älska om de öppna afrikanska slätterna börjar romantisk rivalitet, krångliga släktträffar och risken att stöta på farliga tjuvskyttar att försvåra vistelsen i Afrika. När gruppen får en stor hemlängtan som tynger deras hjärtan	börjar de undra om de någonsin kommer att finna vägen hem igen.</div>
 	<p style="text-align:right"><em>Källa: Wikipedia</em></p>
+	<br>
 
+	<div class="hej"> Madagaskar 2 får 5 av 5 pingviner</div>
 
+	<br>
+	<br>
 
+	<table>
+		<tr>
+			<th>Namn</th>
+			<th>Ålder</th>
+			<th>Typ av djur</th>
+		</tr>
+		<tr>
+			<td>Alex</td>
+			<td>43</td>
+			<td>Lejon</td>
+		</tr>
+		<tr>
+			<td>Marty</td>
+			<td>25</td>
+			<td>Zebra</td>
+		</tr>
+		<tr>
+			<td>Melman</td>
+			<td>34</td>
+			<td>Giraff</td>
+		</tr>
+	</table>
 
-	
+	<br>
+	<h2>Vad tycker <strong>DU</strong> om filmen? Lämna din recension här!</h2>
 
-
-
-</body>
-</html>
+	<form>
+		<p><em><strong>Beskriv filmen med 3 ord:</strong></em></p>
+		<input type="text">
+		<br>
+		<br>
+		<p><em><strong>Vilken av huvudkaraktärerna är din favorit?</strong></em></p>
+		<select>
+			<option>Alex</option>
+			<option>Marty</option>
+			<option>Melman</option>
+			<option>Gloria</option>
+			<option>King Julien</option>
+			<option>Maurice</option>
+		</select>
+		<br>
+		<br>
+		<p><em><strong>Skriv en kort recension av filmen:</strong></em></p>
+		<textarea>
+		</textarea>
+		<br>
+		<br>
+		<p><em><strong>Vilket slutgiltigt betyg får filmen?</strong></em></p>
+		<input type="radio" name="x">Högsta betyg!
+		<input type="radio" name="x">Högre än högsta betyg!
+		<input type="radio" name="x">Bättre än alla filmer som någonsin gjorts!
+		<br>
+		<br>
+		<input type="button" value="Klicka här för att lämna in din recension!">
+	</form>
