@@ -1,108 +1,77 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Omnomnom</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
-<style>
-	body{
-	padding-bottom: 50px;
-	background-color: #99FFD6;
-	}
-	h1{
-		font-family: impact, sans-serif;
-		font-size: 50px;
-		text-align: center;
-	}
-	@media screen and (max-width: 700px){
-		#wrapper{
-		margin: 0 auto;
-		position: relative;
-		top:100px;
-		background-color: #99FFD6;
-		width: 90%;
-		padding-bottom: 50px
-		}
-	}
-	#wrapper{
-		margin: 0 auto;
-		position: relative;
-		top:100px;
-		background-color: #99FFD6;
-		width: 50%;
-		padding-bottom: 50px
-	}
-	.title{
-		font-family: 'lucida sans unicode', 'lucida grande', sans-serif;
-		font-size: 30px;
-		text-align: center;
-		background-color: #CCFFEB;
-		width: 97%;
-		margin: 0 auto;
-		padding: 1.5%;
-	}
-	.recept{
-		font-family: 'lucida sans unicode', 'lucida grande', sans-serif;
-		font-size: 15px;
-		background-color: #E6FFF5;
-		width: 97%;
-		margin: 0 auto;
-		padding: 1.5%;
-	}
+<html lang="en">
 
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</style>
-</head>
+	    <!-- Bootstap latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
 
-<body>
-<div id="wrapper">
-	<h1>Mat? Nemas!</h1>
-	<div class="title">Ärtsoppa på gröna ärtor och kokosmjölk</div>
-	<div class="recept"><strong>Du behöver:</strong>
-		<ul>
-			<li>Gul lök</li>
-			<li>Vitlök</li>
-			<li>Chili (pulver, flarn eller frukt)</li>
-			<li>Frysta ärtor</li>
-			<li>Grönsaksbuljong</li>
-			<li>Citronjuice</li>
-			<li>Kokosmjölk</li>
-			<li>Timjan</li>
-			<li>Salt</li>
-			<li>Olivolja</li>
-		</ul>
-		<strong>Du gör såhär:</strong>
-		<ol>
-			<li>Fräs lök, vitlök och chili i olivolja i en kastrull.</li>
-			<li>Släng i ärtor, vatten (så ärtortna precis täcks, kanske lite mer) och buljongtärningar. Koka upp, sänk temperaturen lite och låt koka i 10 min.</li>
-			<li>I med kokosnötsmjölken och mixa med en stavmixer (går säkert att köra i vanlig mixer med, men var försiktig och ta lite i taget i så fall).</li>
-			<li>Späd med lite vatten om den känns för tjock. Släng i citronjuice, timjan och salt.</li>
-			<li>Servera i en skål med lite kesella eller youghurt om man vill.</li>
-	</div>
-	<br>
-	<br>
-	<div class="title">Tomatgryta på 5 minuter</div>
-	<div class="recept"><strong>Du behöver:</strong>
-		<ul>
-			<li>Fryst spenat</li>
-			<li>Massa krossade tomater (4-5 burkar)</li>
-			<li>Färsk ingefära</li>
-			<li>Vitlök</li>
-			<li>Avocado</li>
-			<li>Fetaost</li>
-			<li>Smör</li>
-			<li>Salt</li>
-			<li>Peppar</li>
-		</ul>
-		<strong>Du gör såhär:</strong>
-		<ol>
-			<li>Fräs fryst spenat i kastrull.</li>
-			<li>Hacka massa vitlök och ingefära och släng i tillsammans med salt och peppar.</li>
-			<li>I med krossade tomater och låt puttra en stund.</li>
-			<li>Smula på feta och lägg i en halv avocado eller ät den på sidan om.</li>
-	</div>
+	</head>
+	<body>
+	    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	        <div class="navbar-header">
+	        	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            	<span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+	        </div>
+	        <div id="navbar" class="navbar-collapse collapse">
+	        	<ul class="nav navbar-nav navbar-right">
+	        		<li class="active"><a href="#"><span class="sr-only"></span> Home</a></li>
+	                 <li><a href="#">About</a></li>
+	                 <li><a href="#">Contact</a></li>
+	                 <!-- <li class="dropdown">
+	                 	<a href="#" class="dropdown-toggle" data-toggle="dropdown"
+	                     role="button" aria-haspopup="true" aria-expanded="false">
+	                     Menu <span class="caret"></span></a>
+	                     <ul class="dropdown-menu">
+	                        <li><a href="#">Dropdown1</a></li>
+	                        <li><a href="#">Dropdown2</a></li>
+	                        <li><a href="#">Dropdown3</a></li>
+	                        <li><a href="#">Dropdown4</a></li>
+	                        <li role="separator" class="divider"></li>
+	                        <li class="dropdown-header">Specials</li>
+	                        <li><a href="#">Dropdown5</a></li>
+	                        <li><a href="#">Dropdown6</a></li>
+	                    </ul>
+	                 </li> -->
+	            </ul>
+	        </div>
+	    </nav>
 
+		<header class="jumbotron"> 
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-12">
+						<h1>Move with us!</h1>
+					</div>
+				</div>
+			</div>
+		</header>
 
-</div>
-</body>
+		<div class="container">
+			<div class="row middle">
+				<div class="col-xs-12 col-md-12">
+					<h2>Welcome to our awsome world!</h2>
+					<p>Here we will share all the info you need to join.</p>
+
+				</div>
+			</div>
+		</div>
+		<footer class="row-footer">
+			<div class="container">
+				<div class="row">
+					<p></p>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+
 </html>
