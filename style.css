@@ -81,6 +81,10 @@ p {
 
 }
 
+.social a {
+	margin: 3px;
+}
+
 .textcenter {
 	margin: 0 auto;
 	text-align: center;
