@@ -65,11 +65,24 @@ p {
 	min-height: 300px;
 }
 
-.row-footer{
-	opacity: 0.2;
-    background-color: #0099FF;
-    margin:0px auto;
-    padding: 20px 0px 20px 0px;
+.row-footer {
+	border-top: solid 1px;
+	border-top-color: #D1DEE3;
+    margin: 0px auto;
+    padding: 20px 0px 80px 0px;
     min-height: 200px;
+}
+
+.social {
+	margin: 0 auto;
+	text-align: center;
+	width: 500px;
+	padding: 20px;
+
+}
+
+.textcenter {
+	margin: 0 auto;
+	text-align: center;
 }
 
